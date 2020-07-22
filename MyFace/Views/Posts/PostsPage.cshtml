@@ -3,3 +3,12 @@
 @{
     Layout = "_Layout";
 }
+
+<ol>
+    @foreach (var post in Model.Posts)
+    {
+        <li>@post.Message</li>
+        <li><img src=" @post.ImageUrl" alt=""></li>
+        <li>@post.PostedAt</li>
+    }
+</ol>
