@@ -7,8 +7,11 @@
 <ol>
     @foreach (var post in Model.Posts)
     {
-        <li>@post.Message</li>
-        <li><img src=" @post.ImageUrl" alt=""></li>
-        <li>@post.PostedAt</li>
+        <li>
+        @post.Message
+        <img src=" @post.ImageUrl" alt="">
+        @post.PostedAt
+        </li>
     }
 </ol>
+
