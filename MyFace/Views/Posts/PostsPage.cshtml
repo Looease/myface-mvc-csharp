@@ -3,16 +3,20 @@
 @{
     Layout = "_Layout";
 }
-<header><h1>Coding Club</h1></header>
+<header><h1>My Face</h1></header>
 
-<ol>
+<h4>News Feed</h4>
+
+<ol class="posts">
     @foreach (var post in Model.Posts)
     {
         <li>
-        @post.Message
-        <img src=" @post.ImageUrl" alt="">
-        @post.PostedAt
+        @post.Message <br>
+        <img src=" @post.ImageUrl" alt=""><br>
+        @post.PostedAt<br>
         </li>
     }
 </ol>
+
+<button class="button"><a href="/posts?pageNumber=2">Next Page</a></button>
 
