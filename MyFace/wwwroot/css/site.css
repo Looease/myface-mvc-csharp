@@ -1,0 +1,68 @@
+body {
+  font: 100% "Open Sans";
+  background-color: #252B38;
+  font-size: 1.5em;
+  margin: 5%;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+nav ul {
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+nav a {
+  padding: 6px 12px;
+  text-decoration: none;
+  color: white;
+}
+
+nav:hover {
+  color: #2986FF;
+}
+
+#hero-section {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#hero-section .cover {
+  width: 90%;
+  height: 400px;
+  padding: 0px 10% 0px 10%;
+}
+
+#hero-section .avatar {
+  border-radius: 150px;
+  border: solid 2px white;
+}
+
+img {
+  width: 250px;
+}
+/*# sourceMappingURL=site.css.map */
