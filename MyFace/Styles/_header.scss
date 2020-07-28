@@ -8,15 +8,17 @@ header {
 
     @media (min-width: $desktop) {
       @include gutters;
+      height: $headerHeight;
       display: flex;
+      flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      height: 60px;
     }
   }
   
   .nav-links {
     display: flex;
+    flex-direction: row;
   }
   
   .nav-link {

@@ -1,0 +1,31 @@
+﻿@import "shared";
+
+footer {
+  background: $backgroundColorDarker;
+  
+  .footer-content {
+    @include gutters;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+    @media (min-width: $tablet) {
+      justify-content: space-between;
+      flex-wrap: nowrap;
+    }
+  }
+  
+  .corndel-logo {
+    width: 200px;
+    height: 140px;
+    margin: $spacingMobile;
+  }
+  
+  .softwire-logo {
+    width: 300px;
+    height: 62px;
+    margin: $spacingMobile;
+  }
+}

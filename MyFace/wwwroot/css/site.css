@@ -7,10 +7,11 @@ header .nav-bar {
 @media (min-width: 768px) {
   header .nav-bar {
     margin: 0 24px;
+    height: 60px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 60px;
   }
 }
 @media (min-width: 768px) and (min-width: 600px) {
@@ -31,6 +32,7 @@ header .nav-bar {
 }
 header .nav-links {
   display: flex;
+  flex-direction: row;
 }
 header .nav-link {
   font-size: 20px;
@@ -51,6 +53,50 @@ header .nav-link {
 }
 header .nav-link:hover {
   color: #2985FF;
+}
+
+footer {
+  background: #151820;
+}
+footer .footer-content {
+  margin: 0 24px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 600px) {
+  footer .footer-content {
+    margin: 0 32px;
+  }
+}
+@media (min-width: 768px) {
+  footer .footer-content {
+    margin: 0 24px;
+  }
+}
+@media (min-width: 1296px) {
+  footer .footer-content {
+    max-width: 1200px;
+    margin: auto;
+  }
+}
+@media (min-width: 600px) {
+  footer .footer-content {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+}
+footer .corndel-logo {
+  width: 200px;
+  height: 140px;
+  margin: 24px;
+}
+footer .softwire-logo {
+  width: 300px;
+  height: 62px;
+  margin: 24px;
 }
 
 body {
