@@ -1,0 +1,110 @@
+﻿@import "_shared";
+
+$profileImageHeightMobile: 112px;
+$profileImageHeightTablet: 160px;
+$profileImageHeightDesktop: 200px;
+$profileImageBorderWidth: 4px;
+$profileImageTotalMobile: $profileImageHeightMobile + 2*$profileImageBorderWidth;
+$profileImageTotalTablet: $profileImageHeightTablet + 2*$profileImageBorderWidth;
+$profileImageTotalDesktop: $profileImageHeightDesktop + 2*$profileImageBorderWidth;
+
+$userDetailsSpacing: 4px;
+
+#hero-section {
+  position: relative;
+  margin-bottom: $profileImageHeightMobile/2 + $sectionSpacingMobile;
+  
+  @media (min-width: $tablet) {
+    margin-bottom: $profileImageHeightTablet/2 + $sectionSpacingTablet;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: $profileImageHeightDesktop/2 + $sectionSpacingDesktop;
+  }
+  
+  @media (min-width: $maxContentWidth) {
+    max-width: $maxContentWidth;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .cover-image {
+    height: 224px;
+    object-fit: cover;
+    object-position: center;
+    
+    @media (min-width: $tablet) {
+      height: auto;
+    }
+  }
+  
+  .user-summary {
+    background: $overlayColor;
+    display: flex;
+    flex-direction: row;
+
+    position: absolute;
+    right: 0;
+    bottom: -$profileImageHeightMobile / 2;
+    left: $guttersMobile + $profileImageTotalMobile/2;
+
+    @media (min-width: $tablet) {
+      bottom: -$profileImageHeightTablet / 2;
+      left: $guttersTablet + $profileImageTotalTablet/2;
+    }
+
+    @media (min-width: $desktop) {
+      bottom: -$profileImageHeightDesktop / 2;
+      left: $guttersDesktop + $profileImageTotalDesktop/2;
+    }
+  }
+  
+  .profile-image {
+    height: $profileImageHeightMobile;
+    width: $profileImageHeightMobile;
+    border-radius: 50%;
+    border: $profileImageBorderWidth solid $foregroundColor;
+    margin-left: -$profileImageTotalMobile/2;
+
+    @media (min-width: $tablet) {
+      height: $profileImageHeightTablet;
+      width: $profileImageHeightTablet;
+      margin-left: -$profileImageTotalTablet/2;
+    }
+
+    @media (min-width: $desktop) {
+      height: $profileImageHeightDesktop;
+      width: $profileImageHeightDesktop;
+      margin-left: -$profileImageTotalDesktop/2;
+    }
+  }
+  
+  .user-details {
+    margin-left: $spacingMobile;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media (min-width: $tablet) {
+      margin-left: $spacingTablet;
+    }
+
+    @media (min-width: $desktop) {
+      margin-left: $spacingDesktop;
+    }
+  }
+  
+  .user-name {
+    @include titleText;
+    margin-top: 8px;
+    margin-bottom: $userDetailsSpacing;
+  }
+  
+  .username-and-email {
+    margin-top: $userDetailsSpacing;
+  }
+  
+  .user-username, .user-email {
+    @include bodyText;
+  }
+}

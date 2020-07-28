@@ -5,11 +5,18 @@
 }
 
 <section id="hero-section">
-    <img src="@Model.CoverImageUrl" alt="Cover Image"/>
-    <img src="@Model.ProfileImageUrl" alt="Profile Image"/>
-    <h1>@Model.DisplayName</h1>
-    <div>@Model.Username</div>
-    <div>@Model.Email</div>
+    <img class="cover-image" src="@Model.CoverImageUrl" alt="Cover Image"/>
+    <div class="user-summary">
+        <img class="profile-image" src="@Model.ProfileImageUrl" alt="Profile Image"/>
+        <div class="user-details">
+            <h1 class="user-name">@Model.DisplayName</h1>
+            <div class="username-and-email">
+                <div class="user-username">@Model.Username</div>
+                <div class="user-email">@Model.Email</div>
+            </div>
+        </div>
+    </div>
+
 </section>
 
 <section id="posts-section">

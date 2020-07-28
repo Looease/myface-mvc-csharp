@@ -1,6 +1,7 @@
 ﻿@import "shared";
 @import "header";
 @import "footer";
+@import "hero";
 
 body {
   margin: 0;
@@ -11,4 +12,24 @@ ol, ul {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  margin: 0;
+}
+
+section {
+  margin-bottom: $sectionSpacingMobile;
+  
+  @media (min-width: $tablet) {
+    margin-bottom: $sectionSpacingTablet;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: $sectionSpacingDesktop;
+  }
 }

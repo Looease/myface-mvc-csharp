@@ -19,11 +19,14 @@ header {
   .nav-links {
     display: flex;
     flex-direction: row;
+    
+    .nav-link {
+      margin: 0 $spacingDesktop/2;
+    }
   }
   
   .nav-link {
     @include linkText;
-    margin: 0 $spacingDesktop/2;
   }
 }
 

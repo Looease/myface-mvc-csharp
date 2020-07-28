@@ -4,7 +4,7 @@ header {
 header .nav-bar {
   display: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   header .nav-bar {
     margin: 0 24px;
     height: 60px;
@@ -14,17 +14,17 @@ header .nav-bar {
     align-items: center;
   }
 }
-@media (min-width: 768px) and (min-width: 600px) {
+@media (min-width: 769px) and (min-width: 600px) {
   header .nav-bar {
     margin: 0 32px;
   }
 }
-@media (min-width: 768px) and (min-width: 768px) {
+@media (min-width: 769px) and (min-width: 769px) {
   header .nav-bar {
     margin: 0 24px;
   }
 }
-@media (min-width: 768px) and (min-width: 1296px) {
+@media (min-width: 769px) and (min-width: 1296px) {
   header .nav-bar {
     max-width: 1200px;
     margin: auto;
@@ -34,6 +34,9 @@ header .nav-links {
   display: flex;
   flex-direction: row;
 }
+header .nav-links .nav-link {
+  margin: 0 24px;
+}
 header .nav-link {
   font-size: 20px;
   line-height: 32px;
@@ -41,9 +44,8 @@ header .nav-link {
   font-family: "Open Sans", sans-serif;
   transition: all 200ms ease;
   text-decoration: none;
-  margin: 0 24px;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   header .nav-link {
     font-size: 24px;
     line-height: 40px;
@@ -71,7 +73,7 @@ footer .footer-content {
     margin: 0 32px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   footer .footer-content {
     margin: 0 24px;
   }
@@ -99,6 +101,129 @@ footer .softwire-logo {
   margin: 24px;
 }
 
+#hero-section {
+  position: relative;
+  margin-bottom: 96px;
+}
+@media (min-width: 600px) {
+  #hero-section {
+    margin-bottom: 128px;
+  }
+}
+@media (min-width: 769px) {
+  #hero-section {
+    margin-bottom: 180px;
+  }
+}
+@media (min-width: 1200px) {
+  #hero-section {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+#hero-section .cover-image {
+  height: 224px;
+  object-fit: cover;
+  object-position: center;
+}
+@media (min-width: 600px) {
+  #hero-section .cover-image {
+    height: auto;
+  }
+}
+#hero-section .user-summary {
+  background: rgba(37, 42, 56, 0.56);
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  right: 0;
+  bottom: -56px;
+  left: 84px;
+}
+@media (min-width: 600px) {
+  #hero-section .user-summary {
+    bottom: -80px;
+    left: 116px;
+  }
+}
+@media (min-width: 769px) {
+  #hero-section .user-summary {
+    bottom: -100px;
+    left: 152px;
+  }
+}
+#hero-section .profile-image {
+  height: 112px;
+  width: 112px;
+  border-radius: 50%;
+  border: 4px solid #DCDCDC;
+  margin-left: -60px;
+}
+@media (min-width: 600px) {
+  #hero-section .profile-image {
+    height: 160px;
+    width: 160px;
+    margin-left: -84px;
+  }
+}
+@media (min-width: 769px) {
+  #hero-section .profile-image {
+    height: 200px;
+    width: 200px;
+    margin-left: -104px;
+  }
+}
+#hero-section .user-details {
+  margin-left: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (min-width: 600px) {
+  #hero-section .user-details {
+    margin-left: 32px;
+  }
+}
+@media (min-width: 769px) {
+  #hero-section .user-details {
+    margin-left: 48px;
+  }
+}
+#hero-section .user-name {
+  font-size: 24px;
+  line-height: 32px;
+  color: #DCDCDC;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+@media (min-width: 769px) {
+  #hero-section .user-name {
+    font-size: 32px;
+    line-height: 40px;
+    color: #DCDCDC;
+    font-family: "Open Sans", sans-serif;
+  }
+}
+#hero-section .username-and-email {
+  margin-top: 4px;
+}
+#hero-section .user-username, #hero-section .user-email {
+  font-size: 14px;
+  line-height: 20px;
+  color: #DCDCDC;
+  font-family: "Open Sans", sans-serif;
+}
+@media (min-width: 769px) {
+  #hero-section .user-username, #hero-section .user-email {
+    font-size: 16px;
+    line-height: 24px;
+    color: #DCDCDC;
+    font-family: "Open Sans", sans-serif;
+  }
+}
+
 body {
   margin: 0;
   background: #252A38;
@@ -108,6 +233,28 @@ ol, ul {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  margin: 0;
+}
+
+section {
+  margin-bottom: 40px;
+}
+@media (min-width: 600px) {
+  section {
+    margin-bottom: 48px;
+  }
+}
+@media (min-width: 769px) {
+  section {
+    margin-bottom: 80px;
+  }
 }
 
 /*# sourceMappingURL=site.css.map */

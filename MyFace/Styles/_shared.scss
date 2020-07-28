@@ -19,9 +19,14 @@ $spacingMobile: 24px;
 $spacingTablet: 32px;
 $spacingDesktop: 48px;
 
+// Section spacing
+$sectionSpacingMobile: 40px;
+$sectionSpacingTablet: 48px;
+$sectionSpacingDesktop: 80px;
+
 // Breakpoints
 $tablet: 600px;
-$desktop: 768px;
+$desktop: 769px;
 $highDefinition: $maxContentWidth + 2*$guttersDesktop;
 
 @mixin gutters() {
