@@ -1,0 +1,27 @@
+﻿@import "shared";
+
+header {
+  background: $backgroundColorDarker;
+  
+  .nav-bar {
+    display: none;
+
+    @media (min-width: $desktop) {
+      @include gutters;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 60px;
+    }
+  }
+  
+  .nav-links {
+    display: flex;
+  }
+  
+  .nav-link {
+    @include linkText;
+    margin: 0 $spacingDesktop/2;
+  }
+}
+

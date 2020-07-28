@@ -1,0 +1,93 @@
+﻿// Colors
+$backgroundColor: #252A38;
+$backgroundColorDarker: #151820;
+$foregroundColor: #DCDCDC;
+$primaryColor: #2985FF;
+$overlayColor: transparentize($backgroundColor, 0.44);
+
+// Gutters
+$guttersMobile: 24px;
+$guttersTablet: 32px;
+$guttersDesktop: 48px;
+
+$maxContentWidth: 1200px;
+
+// Margins
+$spacingMobile: 24px;
+$spacingTablet: 32px;
+$spacingDesktop: 48px;
+
+// Breakpoints
+$tablet: 600px;
+$desktop: 768px;
+$highDefinition: $maxContentWidth + 2*$guttersDesktop;
+
+@mixin gutters() {
+  margin: 0 $guttersMobile;
+  
+  @media (min-width: $tablet) {
+    margin: 0 $guttersTablet;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 $guttersMobile;
+  }
+
+  @media (min-width: $highDefinition) {
+    max-width: $maxContentWidth;
+    margin: auto;
+  }
+}
+
+@mixin _font($fontSize, $lineHeight) {
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  color: $foregroundColor;
+  font-family: 'Open Sans', sans-serif;
+}
+
+@mixin titleText() {
+  @include _font(24px, 32px);
+
+  @media (min-width: $desktop) {
+    @include _font(32px, 40px);
+  }
+}
+
+@mixin subTitleText() {
+  @include _font(20px, 24px);
+
+  @media (min-width: $desktop) {
+    @include _font(24px, 32px);
+  }
+}
+
+@mixin linkText() {
+  @include _font(20px, 32px);
+  transition: all 200ms ease;
+  text-decoration: none;
+
+  @media (min-width: $desktop) {
+    @include _font(24px, 40px);
+  }
+  
+  &:hover {
+    color: $primaryColor;
+  }
+}
+
+@mixin bodyText() {
+  @include _font(14px, 20px);
+
+  @media (min-width: $desktop) {
+    @include _font(16px, 24px);
+  }
+}
+
+@mixin secondaryText() {
+  @include _font(10px, 16px);
+
+  @media (min-width: $desktop) {
+    @include _font(12px, 20px);
+  }
+}

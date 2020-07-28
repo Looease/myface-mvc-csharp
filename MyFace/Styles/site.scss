@@ -1,0 +1,13 @@
+﻿@import "shared";
+@import "header";
+
+body {
+  margin: 0;
+  background: $backgroundColor;
+}
+
+ol, ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
