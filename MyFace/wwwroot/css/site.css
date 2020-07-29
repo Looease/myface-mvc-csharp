@@ -6,7 +6,8 @@ header .nav-bar {
 }
 @media (min-width: 769px) {
   header .nav-bar {
-    margin: 0 24px;
+    margin-left: 24px;
+    margin-right: 24px;
     height: 60px;
     display: flex;
     flex-direction: row;
@@ -16,18 +17,21 @@ header .nav-bar {
 }
 @media (min-width: 769px) and (min-width: 600px) {
   header .nav-bar {
-    margin: 0 32px;
+    margin-left: 32px;
+    margin-right: 32px;
   }
 }
 @media (min-width: 769px) and (min-width: 769px) {
   header .nav-bar {
-    margin: 0 48px;
+    margin-left: 48px;
+    margin-right: 48px;
   }
 }
 @media (min-width: 769px) and (min-width: 1296px) {
   header .nav-bar {
     max-width: 1200px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 header .nav-links {
@@ -42,7 +46,7 @@ header .nav-link {
   line-height: 32px;
   color: #DCDCDC;
   font-family: "Open Sans", sans-serif;
-  transition: all 200ms ease;
+  transition: all 150ms ease;
   text-decoration: none;
 }
 @media (min-width: 769px) {
@@ -59,9 +63,12 @@ header .nav-link:hover {
 
 footer {
   background: #151820;
+  border-top: 1px solid #DCDCDC;
 }
 footer .footer-content {
-  margin: 0 24px;
+  margin-left: 24px;
+  margin-right: 24px;
+  padding: 16px 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -70,35 +77,49 @@ footer .footer-content {
 }
 @media (min-width: 600px) {
   footer .footer-content {
-    margin: 0 32px;
+    margin-left: 32px;
+    margin-right: 32px;
   }
 }
 @media (min-width: 769px) {
   footer .footer-content {
-    margin: 0 48px;
+    margin-left: 48px;
+    margin-right: 48px;
   }
 }
 @media (min-width: 1296px) {
   footer .footer-content {
     max-width: 1200px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media (min-width: 600px) {
   footer .footer-content {
     justify-content: space-between;
     flex-wrap: nowrap;
+    padding: 16px 0;
   }
 }
-footer .corndel-logo {
-  width: 200px;
-  height: 140px;
-  margin: 16px;
+@media (min-width: 769px) {
+  footer .footer-content {
+    padding: 24px 0;
+  }
 }
-footer .softwire-logo {
-  width: 300px;
-  height: 62px;
-  margin: 16px;
+footer .logo-image {
+  width: 160px;
+  margin: 16px 25%;
+}
+@media (min-width: 600px) {
+  footer .logo-image {
+    margin: 16px;
+  }
+}
+@media (min-width: 769px) {
+  footer .logo-image {
+    width: 200px;
+    margin: 24px;
+  }
 }
 
 #hero-section {
@@ -225,22 +246,26 @@ footer .softwire-logo {
 }
 
 .post-list-section {
-  margin: 0 24px;
+  margin-left: 24px;
+  margin-right: 24px;
 }
 @media (min-width: 600px) {
   .post-list-section {
-    margin: 0 32px;
+    margin-left: 32px;
+    margin-right: 32px;
   }
 }
 @media (min-width: 769px) {
   .post-list-section {
-    margin: 0 48px;
+    margin-left: 48px;
+    margin-right: 48px;
   }
 }
 @media (min-width: 1296px) {
   .post-list-section {
     max-width: 1200px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .post-list-section .post-list-title {
@@ -270,7 +295,7 @@ footer .softwire-logo {
 }
 @media (min-width: 769px) {
   .post-list-section .post-list {
-    margin: 24px -24px;
+    margin: 0px -24px;
     flex-wrap: wrap;
     overflow-x: hidden;
   }
@@ -290,13 +315,13 @@ footer .softwire-logo {
 }
 .post-list-section .post {
   min-width: calc(100% - 72px);
-  margin: 12px;
+  margin: 0 12px;
   background: #151820;
 }
 @media (min-width: 600px) {
   .post-list-section .post {
     min-width: calc(50% - 96px);
-    margin: 16px;
+    margin: 0 16px;
   }
 }
 @media (min-width: 769px) {
@@ -322,6 +347,7 @@ footer .softwire-logo {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   text-decoration: none;
+  transition: all 150ms ease;
 }
 @media (min-width: 769px) {
   .post-list-section .post-user-link {
@@ -379,7 +405,7 @@ footer .softwire-logo {
   line-height: 32px;
   color: #DCDCDC;
   font-family: "Open Sans", sans-serif;
-  transition: all 200ms ease;
+  transition: all 150ms ease;
   text-decoration: none;
 }
 @media (min-width: 769px) {

@@ -34,19 +34,23 @@ $desktop: 769px;
 $highDefinition: $maxContentWidth + 2*$guttersDesktop;
 
 @mixin gutters() {
-  margin: 0 $guttersMobile;
+  margin-left: $guttersMobile;
+  margin-right: $guttersMobile;
   
   @media (min-width: $tablet) {
-    margin: 0 $guttersTablet;
+    margin-left: $guttersTablet;
+    margin-right: $guttersTablet;
   }
 
   @media (min-width: $desktop) {
-    margin: 0 $guttersDesktop;
+    margin-left: $guttersDesktop;
+    margin-right: $guttersDesktop;
   }
 
   @media (min-width: $highDefinition) {
     max-width: $maxContentWidth;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -75,7 +79,7 @@ $highDefinition: $maxContentWidth + 2*$guttersDesktop;
 
 @mixin linkText() {
   @include _font(20px, 32px);
-  transition: all 200ms ease;
+  transition: all 150ms ease;
   text-decoration: none;
 
   @media (min-width: $desktop) {

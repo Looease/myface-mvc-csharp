@@ -2,9 +2,11 @@
 
 footer {
   background: $backgroundColorDarker;
+  border-top: 1px solid $foregroundColor;
   
   .footer-content {
     @include gutters;
+    padding: $spacingMobile 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -14,18 +16,25 @@ footer {
     @media (min-width: $tablet) {
       justify-content: space-between;
       flex-wrap: nowrap;
+      padding: $spacingTablet 0;
+    }
+    
+    @media (min-width: $desktop) {
+      padding: $spacingDesktop 0;
     }
   }
   
-  .corndel-logo {
-    width: 200px;
-    height: 140px;
-    margin: $spacingMobile;
-  }
-  
-  .softwire-logo {
-    width: 300px;
-    height: 62px;
-    margin: $spacingMobile;
+  .logo-image {
+    width: 160px;
+    margin: $spacingMobile 25%;
+    
+    @media (min-width: $tablet) {
+      margin: $spacingTablet;
+    }
+
+    @media (min-width: $desktop) {
+      width: 200px;
+      margin: $spacingDesktop;
+    }
   }
 }

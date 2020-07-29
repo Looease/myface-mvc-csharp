@@ -18,12 +18,9 @@
     }
 
     @media (min-width: $desktop) {
-      margin: $spacingDesktop #{-$cardSpacingDesktop};
+      margin: #{$spacingDesktop - $cardSpacingDesktop} #{-$cardSpacingDesktop};
       flex-wrap: wrap;
       overflow-x: hidden;
-    }
-    
-    @media (min-width: $highDefinition) {
     }
     
     .post:first-child {
@@ -41,12 +38,12 @@
   
   .post {
     min-width: calc(100% - #{6*$cardSpacingMobile});
-    margin: $cardSpacingMobile;
+    margin: 0 $cardSpacingMobile;
     background: $backgroundColorDarker;
 
     @media (min-width: $tablet) {
       min-width: calc(50% - #{6*$cardSpacingTablet});
-      margin: $cardSpacingTablet;
+      margin: 0 $cardSpacingTablet;
     }
 
     @media (min-width: $desktop) {
@@ -69,6 +66,7 @@
     @include bodyText;
     font-weight: 600;
     text-decoration: none;
+    transition: all 150ms ease;
     
     &:hover {
       color: $primaryColor;
