@@ -41,7 +41,7 @@ $highDefinition: $maxContentWidth + 2*$guttersDesktop;
   }
 
   @media (min-width: $desktop) {
-    margin: 0 $guttersMobile;
+    margin: 0 $guttersDesktop;
   }
 
   @media (min-width: $highDefinition) {

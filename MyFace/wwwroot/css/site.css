@@ -21,7 +21,7 @@ header .nav-bar {
 }
 @media (min-width: 769px) and (min-width: 769px) {
   header .nav-bar {
-    margin: 0 24px;
+    margin: 0 48px;
   }
 }
 @media (min-width: 769px) and (min-width: 1296px) {
@@ -75,7 +75,7 @@ footer .footer-content {
 }
 @media (min-width: 769px) {
   footer .footer-content {
-    margin: 0 24px;
+    margin: 0 48px;
   }
 }
 @media (min-width: 1296px) {
@@ -224,12 +224,30 @@ footer .softwire-logo {
   }
 }
 
+.post-list-section {
+  margin: 0 24px;
+}
+@media (min-width: 600px) {
+  .post-list-section {
+    margin: 0 32px;
+  }
+}
+@media (min-width: 769px) {
+  .post-list-section {
+    margin: 0 48px;
+  }
+}
+@media (min-width: 1296px) {
+  .post-list-section {
+    max-width: 1200px;
+    margin: auto;
+  }
+}
 .post-list-section .post-list-title {
   font-size: 20px;
   line-height: 24px;
   color: #DCDCDC;
   font-family: "Open Sans", sans-serif;
-  margin: 0 24px;
 }
 @media (min-width: 769px) {
   .post-list-section .post-list-title {
@@ -239,35 +257,60 @@ footer .softwire-logo {
     font-family: "Open Sans", sans-serif;
   }
 }
-@media (min-width: 600px) {
-  .post-list-section .post-list-title {
-    margin: 0 32px;
-  }
-}
-@media (min-width: 769px) {
-  .post-list-section .post-list-title {
-    margin: 0 24px;
-  }
-}
-@media (min-width: 1296px) {
-  .post-list-section .post-list-title {
-    max-width: 1200px;
-    margin: auto;
-  }
-}
 .post-list-section .post-list {
-  margin: 12px 0;
+  margin: 16px -24px;
   display: flex;
   flex-direction: row;
   overflow-x: scroll;
 }
+@media (min-width: 600px) {
+  .post-list-section .post-list {
+    margin: 16px -32px;
+  }
+}
+@media (min-width: 769px) {
+  .post-list-section .post-list {
+    margin: 24px -24px;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+  }
+}
 .post-list-section .post-list .post:first-child {
   margin-left: 24px;
+}
+@media (min-width: 600px) {
+  .post-list-section .post-list .post:first-child {
+    margin-left: 32px;
+  }
+}
+@media (min-width: 769px) {
+  .post-list-section .post-list .post:first-child {
+    margin-left: 24px;
+  }
 }
 .post-list-section .post {
   min-width: calc(100% - 72px);
   margin: 12px;
   background: #151820;
+}
+@media (min-width: 600px) {
+  .post-list-section .post {
+    min-width: calc(50% - 96px);
+    margin: 16px;
+  }
+}
+@media (min-width: 769px) {
+  .post-list-section .post {
+    min-width: calc(50% - 48px);
+    max-width: calc(50% - 48px);
+    margin: 24px;
+  }
+}
+@media (min-width: 1296px) {
+  .post-list-section .post {
+    min-width: calc(100%/3 - 48px);
+    max-width: calc(100%/3 - 48px);
+  }
 }
 .post-list-section .post-details {
   padding: 16px;
@@ -321,6 +364,16 @@ footer .softwire-logo {
     font-family: "Open Sans", sans-serif;
   }
 }
+@media (min-width: 600px) {
+  .post-list-section .post-message {
+    margin-top: 16px;
+  }
+}
+@media (min-width: 769px) {
+  .post-list-section .post-message {
+    margin-top: 24px;
+  }
+}
 .post-list-section .show-more-link {
   font-size: 20px;
   line-height: 32px;
@@ -328,7 +381,6 @@ footer .softwire-logo {
   font-family: "Open Sans", sans-serif;
   transition: all 200ms ease;
   text-decoration: none;
-  margin: 0 24px;
 }
 @media (min-width: 769px) {
   .post-list-section .show-more-link {
@@ -340,22 +392,6 @@ footer .softwire-logo {
 }
 .post-list-section .show-more-link:hover {
   color: #2985FF;
-}
-@media (min-width: 600px) {
-  .post-list-section .show-more-link {
-    margin: 0 32px;
-  }
-}
-@media (min-width: 769px) {
-  .post-list-section .show-more-link {
-    margin: 0 24px;
-  }
-}
-@media (min-width: 1296px) {
-  .post-list-section .show-more-link {
-    max-width: 1200px;
-    margin: auto;
-  }
 }
 
 body {

@@ -1,20 +1,41 @@
 ﻿@import "shared";
 
 .post-list-section {
+  @include gutters;
   
   .post-list-title {
     @include subTitleText;
-    @include gutters;
   }
   
   .post-list {
-    margin: $cardSpacingMobile 0;
+    margin: $spacingMobile #{-$guttersMobile};
     display: flex;
     flex-direction: row;
     overflow-x: scroll;
     
+    @media (min-width: $tablet) {
+      margin: $spacingTablet #{-$guttersTablet};
+    }
+
+    @media (min-width: $desktop) {
+      margin: $spacingDesktop #{-$cardSpacingDesktop};
+      flex-wrap: wrap;
+      overflow-x: hidden;
+    }
+    
+    @media (min-width: $highDefinition) {
+    }
+    
     .post:first-child {
       margin-left: $guttersMobile;
+
+      @media (min-width: $tablet) {
+        margin-left: $guttersTablet;
+      }
+
+      @media (min-width: $desktop) {
+        margin-left: $cardSpacingDesktop;
+      }
     }
   }
   
@@ -22,6 +43,22 @@
     min-width: calc(100% - #{6*$cardSpacingMobile});
     margin: $cardSpacingMobile;
     background: $backgroundColorDarker;
+
+    @media (min-width: $tablet) {
+      min-width: calc(50% - #{6*$cardSpacingTablet});
+      margin: $cardSpacingTablet;
+    }
+
+    @media (min-width: $desktop) {
+      min-width: calc(50% - #{2*$cardSpacingDesktop});
+      max-width: calc(50% - #{2*$cardSpacingDesktop});
+      margin: $cardSpacingDesktop;
+    }
+
+    @media (min-width: $highDefinition) {
+      min-width: calc(#{100%/3} - #{2*$cardSpacingDesktop});
+      max-width: calc(#{100%/3} - #{2*$cardSpacingDesktop});
+    }
   }
   
   .post-details {
@@ -45,10 +82,17 @@
   .post-message {
     @include bodyText;
     margin-top: $spacingMobile;
+
+    @media (min-width: $tablet) {
+      margin-top: $spacingTablet;
+    }
+
+    @media (min-width: $desktop) {
+      margin-top: $spacingDesktop;
+    }
   }
   
   .show-more-link {
     @include linkText;
-    @include gutters;
   }
 }
