@@ -2,6 +2,7 @@
 @import "header";
 @import "footer";
 @import "hero";
+@import "postList";
 
 body {
   margin: 0;
@@ -18,7 +19,7 @@ img {
   width: 100%;
 }
 
-h1 {
+h1, h2, p {
   margin: 0;
 }
 

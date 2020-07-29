@@ -19,29 +19,29 @@
 
 </section>
 
-<section id="posts-section">
-    <h2>@(Model.FirstName)'s Posts</h2>
+<section id="posts-section" class="post-list-section">
+    <h2 class="post-list-title">@(Model.FirstName)'s Posts</h2>
     <partial name="_PostList" model="@Model.Posts"/>
     @if (Model.HasMorePosts)
     {
-        <a href="@Model.ShowMorePostsUrl">Show More</a>
+        <a class="show-more-link" href="@Model.ShowMorePostsUrl">Show More</a>
     }
 </section>
 
-<section id="likes-section">
-    <h2>Posts @Model.FirstName Liked</h2>
+<section id="likes-section" class="post-list-section">
+    <h2 class="post-list-title">Posts @Model.FirstName Liked</h2>
     <partial name="_PostList" model="@Model.Likes"/>
     @if (Model.HasMoreLikes)
     {
-        <a href="@Model.ShowMoreLikesUrl">Show More</a>
+        <a class="show-more-link" href="@Model.ShowMoreLikesUrl">Show More</a>
     }
 </section>
 
-<section id="dislikes-section">
-    <h2>Posts @Model.FirstName Disliked</h2>
+<section id="dislikes-section" class="post-list-section">
+    <h2 class="post-list-title">Posts @Model.FirstName Disliked</h2>
     <partial name="_PostList" model="@Model.Dislikes"/>
     @if (Model.HasMoreDislikes)
     {
-        <a href="@Model.ShowMoreDislikesUrl">Show More</a>
+        <a class="show-more-link" href="@Model.ShowMoreDislikesUrl">Show More</a>
     }
 </section>

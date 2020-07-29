@@ -35,7 +35,7 @@ header .nav-links {
   flex-direction: row;
 }
 header .nav-links .nav-link {
-  margin: 0 24px;
+  margin: 0 12px;
 }
 header .nav-link {
   font-size: 20px;
@@ -93,12 +93,12 @@ footer .footer-content {
 footer .corndel-logo {
   width: 200px;
   height: 140px;
-  margin: 24px;
+  margin: 16px;
 }
 footer .softwire-logo {
   width: 300px;
   height: 62px;
-  margin: 24px;
+  margin: 16px;
 }
 
 #hero-section {
@@ -175,19 +175,19 @@ footer .softwire-logo {
   }
 }
 #hero-section .user-details {
-  margin-left: 24px;
+  margin-left: 16px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 @media (min-width: 600px) {
   #hero-section .user-details {
-    margin-left: 32px;
+    margin-left: 16px;
   }
 }
 @media (min-width: 769px) {
   #hero-section .user-details {
-    margin-left: 48px;
+    margin-left: 24px;
   }
 }
 #hero-section .user-name {
@@ -224,6 +224,140 @@ footer .softwire-logo {
   }
 }
 
+.post-list-section .post-list-title {
+  font-size: 20px;
+  line-height: 24px;
+  color: #DCDCDC;
+  font-family: "Open Sans", sans-serif;
+  margin: 0 24px;
+}
+@media (min-width: 769px) {
+  .post-list-section .post-list-title {
+    font-size: 24px;
+    line-height: 32px;
+    color: #DCDCDC;
+    font-family: "Open Sans", sans-serif;
+  }
+}
+@media (min-width: 600px) {
+  .post-list-section .post-list-title {
+    margin: 0 32px;
+  }
+}
+@media (min-width: 769px) {
+  .post-list-section .post-list-title {
+    margin: 0 24px;
+  }
+}
+@media (min-width: 1296px) {
+  .post-list-section .post-list-title {
+    max-width: 1200px;
+    margin: auto;
+  }
+}
+.post-list-section .post-list {
+  margin: 12px 0;
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+}
+.post-list-section .post-list .post:first-child {
+  margin-left: 24px;
+}
+.post-list-section .post {
+  min-width: calc(100% - 72px);
+  margin: 12px;
+  background: #151820;
+}
+.post-list-section .post-details {
+  padding: 16px;
+}
+.post-list-section .post-user-link {
+  font-size: 14px;
+  line-height: 20px;
+  color: #DCDCDC;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+}
+@media (min-width: 769px) {
+  .post-list-section .post-user-link {
+    font-size: 16px;
+    line-height: 24px;
+    color: #DCDCDC;
+    font-family: "Open Sans", sans-serif;
+  }
+}
+.post-list-section .post-user-link:hover {
+  color: #2985FF;
+}
+.post-list-section .post-time {
+  font-size: 10px;
+  line-height: 16px;
+  color: #DCDCDC;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+@media (min-width: 769px) {
+  .post-list-section .post-time {
+    font-size: 12px;
+    line-height: 20px;
+    color: #DCDCDC;
+    font-family: "Open Sans", sans-serif;
+  }
+}
+.post-list-section .post-message {
+  font-size: 14px;
+  line-height: 20px;
+  color: #DCDCDC;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 16px;
+}
+@media (min-width: 769px) {
+  .post-list-section .post-message {
+    font-size: 16px;
+    line-height: 24px;
+    color: #DCDCDC;
+    font-family: "Open Sans", sans-serif;
+  }
+}
+.post-list-section .show-more-link {
+  font-size: 20px;
+  line-height: 32px;
+  color: #DCDCDC;
+  font-family: "Open Sans", sans-serif;
+  transition: all 200ms ease;
+  text-decoration: none;
+  margin: 0 24px;
+}
+@media (min-width: 769px) {
+  .post-list-section .show-more-link {
+    font-size: 24px;
+    line-height: 40px;
+    color: #DCDCDC;
+    font-family: "Open Sans", sans-serif;
+  }
+}
+.post-list-section .show-more-link:hover {
+  color: #2985FF;
+}
+@media (min-width: 600px) {
+  .post-list-section .show-more-link {
+    margin: 0 32px;
+  }
+}
+@media (min-width: 769px) {
+  .post-list-section .show-more-link {
+    margin: 0 24px;
+  }
+}
+@media (min-width: 1296px) {
+  .post-list-section .show-more-link {
+    max-width: 1200px;
+    margin: auto;
+  }
+}
+
 body {
   margin: 0;
   background: #252A38;
@@ -239,7 +373,7 @@ img {
   width: 100%;
 }
 
-h1 {
+h1, h2, p {
   margin: 0;
 }
 

@@ -1,0 +1,54 @@
+﻿@import "shared";
+
+.post-list-section {
+  
+  .post-list-title {
+    @include subTitleText;
+    @include gutters;
+  }
+  
+  .post-list {
+    margin: $cardSpacingMobile 0;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    
+    .post:first-child {
+      margin-left: $guttersMobile;
+    }
+  }
+  
+  .post {
+    min-width: calc(100% - #{6*$cardSpacingMobile});
+    margin: $cardSpacingMobile;
+    background: $backgroundColorDarker;
+  }
+  
+  .post-details {
+    padding: $spacingMobile;
+  }
+  
+  .post-user-link {
+    @include bodyText;
+    font-weight: 600;
+    text-decoration: none;
+    
+    &:hover {
+      color: $primaryColor;
+    }
+  }
+  
+  .post-time {
+    @include secondaryText;
+  }
+  
+  .post-message {
+    @include bodyText;
+    margin-top: $spacingMobile;
+  }
+  
+  .show-more-link {
+    @include linkText;
+    @include gutters;
+  }
+}

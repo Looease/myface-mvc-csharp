@@ -15,9 +15,13 @@ $maxContentWidth: 1200px;
 $headerHeight: 60px;
 
 // Margins
-$spacingMobile: 24px;
-$spacingTablet: 32px;
-$spacingDesktop: 48px;
+$spacingMobile: 16px;
+$spacingTablet: 16px;
+$spacingDesktop: 24px;
+
+$cardSpacingMobile: 12px;
+$cardSpacingTablet: 16px;
+$cardSpacingDesktop: 24px;
 
 // Section spacing
 $sectionSpacingMobile: 40px;
@@ -93,6 +97,7 @@ $highDefinition: $maxContentWidth + 2*$guttersDesktop;
 
 @mixin secondaryText() {
   @include _font(10px, 16px);
+  font-weight: 300;
 
   @media (min-width: $desktop) {
     @include _font(12px, 20px);
